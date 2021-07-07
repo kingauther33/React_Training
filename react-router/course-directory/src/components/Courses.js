@@ -4,8 +4,8 @@ import { Route, NavLink, Redirect, useRouteMatch } from "react-router-dom";
 import CourseContainer from './courses/CourseContainer';
 import { HTMLCourses, CSSCourses, JSCourses } from "../data/courses";
 
-const Courses = () => {
-  let match = useRouteMatch();
+const Courses = ({match}) => {
+  // let match = useRouteMatch();
 
   return (
     <div className="main-content courses">
