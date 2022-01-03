@@ -4,6 +4,17 @@ import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
 import useHttp from './hooks/use-http';
 
+const DUMMY_DATA = [
+	{
+		name: 'An',
+		age: 18,
+	},
+	{
+		name: 'Khoi',
+		age: 19,
+	},
+];
+
 function App() {
 	const [tasks, setTasks] = useState([]);
 
